@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <h2>Translation Editor</h2>
+            <section class="translator-section">
+                <select name="language" id="language" onchange="handleChange()">
+                    <option value="en">English</option>
+                    <option value="zh">Chinese</option>
+                </select>
+                <select name="string" id="string">
+                    <option value="string">Select string to translate...</option>
+                </select>
+            </section>
+            <h2 class="web_as">View Website As</h2>
+            <section class="web_view">
+                <select name="view_site" id="view_site">
+                    <option value="user">Current User</option>
+                </select>
+            </section>
+
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <p>TalkingPoint Index</p>
+                <a href="#">add a menu</a>
+            </div>
+            <div class="tranlated-text">
+                <textarea name="textarea" id="" ></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="translator.js"></script>
+</body>
+</html>

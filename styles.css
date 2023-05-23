@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #121212;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #c0c0c0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+}
+
+.container .side-bar {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-right: 1px solid #808080;
+}
+
+.container .side-bar .translator-section,
+.container .side-bar .web_view {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0.2rem;
+  gap: 1rem;
+}
+
+.container .side-bar .translator-section select,
+.container .side-bar .web_view select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  font-size: 1rem;
+  background: transparent;
+  outline: 1px solid #121212;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.container .side-bar .web_as {
+  margin-top: 1rem;
+}
+
+.container .side-bar .web_view {
+  margin-top: 0rem;
+}
+
+.container .main {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.container .main .top-bar {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-auto-flow: column;
+  font-size: 1.3rem;
+}
+
+.container .main .top-bar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.container .main .tranlated-text {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 95%;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.container .main .tranlated-text textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+  resize: none;
+  outline: none;
+  border: 0;
+  border-radius: .4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
+    place-items: start;
+  }
+  .container .side-bar {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    -ms-grid-rows: 35% 65%;
+        grid-template-rows: 35% 65%;
+  }
+  .top-bar {
+    display: none !important;
+  }
+  .translator-section,
+  .web_view {
+    gap: 0.5rem !important;
+    padding: 0.5rem 0.2rem !important;
+  }
+  .web_as {
+    margin-top: 0.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
