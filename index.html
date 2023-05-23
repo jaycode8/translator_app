@@ -8,32 +8,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="side-bar">
-            <h2>Translation Editor</h2>
-            <section class="translator-section">
-                <select name="language" id="language" onchange="handleChange()">
-                    <option value="en">English</option>
-                    <option value="zh">Chinese</option>
-                </select>
-                <textarea name="english" id="english-word" placeholder="Enter a word/talking points to translate"></textarea>
-                <select name="english-topic" id="english-topic">
-                    <option value="">Enter a topic to generate talking points</option>
-                    <option value="Artificial Intelligence">Artificial Intelligence</option>
-                    <option value="Aplication of AI">Aplication of AI</option>
-                    <option value="Machine Learning and Deep Learning">Machine Learning and Deep Learning</option>
-                    <option value="Benefits of AI">Benefits of IA</option>
-                </select>
+    <div class="landing-page">
+        <div class="top-container">
+            <h1>"Unlock Your Communication Potential with the Multilingual TalkingPoint Index"</h1>
+            <section>
+                <span>Enhance Connectivity and Empowering Individual</span>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                </ul>
             </section>
-
+            <img src="./bg.png" alt="img">
         </div>
-        <div class="main">
-            <div class="top-bar">
-                <p>TalkingPoint Index</p>
-                <a href="#">add a menu</a>
+        <div class="container">
+            <div class="side-bar">
+                <h2>Translation Editor</h2>
+                <section class="translator-section">
+                    <select name="language" id="language" onchange="handleChange()">
+                        <option value="en">English</option>
+                        <option value="zh">Chinese</option>
+                    </select>
+                    <textarea name="english" id="english-word" placeholder="Enter a word/talking points to translate"></textarea>
+                    <select name="english-topic" id="english-topic">
+                        <option value="">Enter a topic to generate talking points</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Aplication of AI">Aplication of AI</option>
+                        <option value="Machine Learning and Deep Learning">Machine Learning and Deep Learning</option>
+                        <option value="Benefits of AI">Benefits of IA</option>
+                    </select>
+                </section>
+
             </div>
-            <div class="tranlated-text">
-                <textarea name="textarea" id="translated-word" ></textarea>
+            <div class="main">
+                <div class="top-bar">
+                    <p>TalkingPoint Index</p>
+                    <a href="#">add a menu</a>
+                </div>
+                <div class="tranlated-text">
+                    <textarea name="textarea" id="translated-word" ></textarea>
+                </div>
             </div>
         </div>
     </div>
