@@ -6,6 +6,7 @@
     box-sizing: border-box;
     color: #121212;
     font-family: 'Roboto', sans-serif;
+    resize: none;
 }
 .container {
     width: 100%;
@@ -36,11 +37,26 @@
                 cursor: pointer;
             }
         }
-        .web_as {
-            margin-top: 1rem;
-        }
-        .web_view {
-            margin-top: 0rem;
+        .translator-section{
+            textarea{
+                width: 100%;
+                height: 10rem;
+                padding: .5rem;
+                font-size: 1rem;
+                overflow-y: scroll;
+                outline: none;
+                border: 0;
+                border-radius: .4rem;
+                outline: 1px solid #121212;
+                background: transparent;
+            }
+            #english-topic{
+                height: 6rem;
+                font-size: .9rem;
+            }
+            textarea::placeholder{
+                color: #121212;
+            }
         }
     }
     .main {
@@ -72,10 +88,14 @@
                 padding: 1rem;
                 font-size: 1rem;
                 overflow-y: scroll;
-                resize: none;
                 outline: none;
                 border: 0;
                 border-radius: .4rem;
+                color: #fff;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
         }
     }
@@ -90,7 +110,7 @@
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: unset;
-        grid-template-rows: 30% 70%;
+        grid-template-rows: 40% 60%;
         place-items: start;
         .side-bar {
             height: auto;
@@ -100,17 +120,25 @@
 
 @media screen and (max-width: 500px) {
     .container {
-        grid-template-rows: 35% 65%;
+        grid-template-rows: 38% 62%;
     }
     .top-bar {
         display: none !important;
     }
-    .translator-section,
-    .web_view {
+    .translator-section{
         gap: 0.5rem !important;
         padding: 0.5rem 0.2rem !important;
+        textarea{
+            height: 7rem !important;
+        }
+        #english-topic{
+            height: 5rem !important;
+        }
     }
-    .web_as {
-        margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 380px){
+    .container {
+        grid-template-rows: 40% 60%;
     }
 }

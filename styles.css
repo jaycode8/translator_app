@@ -6,6 +6,7 @@
           box-sizing: border-box;
   color: #121212;
   font-family: 'Roboto', sans-serif;
+  resize: none;
 }
 
 .container {
@@ -47,12 +48,38 @@
   cursor: pointer;
 }
 
-.container .side-bar .web_as {
-  margin-top: 1rem;
+.container .side-bar .translator-section textarea {
+  width: 100%;
+  height: 10rem;
+  padding: .5rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+  outline: none;
+  border: 0;
+  border-radius: .4rem;
+  outline: 1px solid #121212;
+  background: transparent;
 }
 
-.container .side-bar .web_view {
-  margin-top: 0rem;
+.container .side-bar .translator-section #english-topic {
+  height: 6rem;
+  font-size: .9rem;
+}
+
+.container .side-bar .translator-section textarea::-webkit-input-placeholder {
+  color: #121212;
+}
+
+.container .side-bar .translator-section textarea:-ms-input-placeholder {
+  color: #121212;
+}
+
+.container .side-bar .translator-section textarea::-ms-input-placeholder {
+  color: #121212;
+}
+
+.container .side-bar .translator-section textarea::placeholder {
+  color: #121212;
 }
 
 .container .main {
@@ -93,10 +120,15 @@
   padding: 1rem;
   font-size: 1rem;
   overflow-y: scroll;
-  resize: none;
   outline: none;
   border: 0;
   border-radius: .4rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
@@ -110,8 +142,8 @@
   .container {
     -ms-grid-columns: unset;
         grid-template-columns: unset;
-    -ms-grid-rows: 30% 70%;
-        grid-template-rows: 30% 70%;
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
     place-items: start;
   }
   .container .side-bar {
@@ -121,19 +153,28 @@
 
 @media screen and (max-width: 500px) {
   .container {
-    -ms-grid-rows: 35% 65%;
-        grid-template-rows: 35% 65%;
+    -ms-grid-rows: 38% 62%;
+        grid-template-rows: 38% 62%;
   }
   .top-bar {
     display: none !important;
   }
-  .translator-section,
-  .web_view {
+  .translator-section {
     gap: 0.5rem !important;
     padding: 0.5rem 0.2rem !important;
   }
-  .web_as {
-    margin-top: 0.5rem;
+  .translator-section textarea {
+    height: 7rem !important;
+  }
+  .translator-section #english-topic {
+    height: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    -ms-grid-rows: 40% 60%;
+        grid-template-rows: 40% 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
