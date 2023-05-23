@@ -23,9 +23,5 @@ const translate = async (from, to) => {
     textarea.value = data;
 }
 
-const bee = () => {
-    const newString = englishTopic.value + '\n' + englishWord.value;
-    textarea.value = newString;
-}
 
 

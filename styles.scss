@@ -20,8 +20,7 @@
         height: auto;
         padding: 1rem;
         border-right: 1px solid #808080;
-        .translator-section,
-        .web_view {
+        .translator-section{
             display: grid;
             place-items: center;
             padding: 1rem 0.2rem;
@@ -49,10 +48,6 @@
                 border-radius: .4rem;
                 outline: 1px solid #121212;
                 background: transparent;
-            }
-            #english-topic{
-                height: 6rem;
-                font-size: .9rem;
             }
             textarea::placeholder{
                 color: #121212;
@@ -130,9 +125,6 @@
         padding: 0.5rem 0.2rem !important;
         textarea{
             height: 7rem !important;
-        }
-        #english-topic{
-            height: 5rem !important;
         }
     }
 }
