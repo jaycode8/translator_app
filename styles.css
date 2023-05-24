@@ -8,6 +8,16 @@
   font-family: "Roboto", sans-serif;
   resize: none;
   text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.7rem 2.7rem;
+  background: #ff4800;
+  color: #fff;
 }
 
 .landing-page {
@@ -71,6 +81,92 @@
   width: 98%;
 }
 
+.landing-page .about {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid #121212;
+}
+
+.landing-page .about span {
+  width: 40rem;
+  text-align: center;
+}
+
+.landing-page .about span h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.landing-page .about span p {
+  line-height: 1.8rem;
+  margin: 1rem 0;
+}
+
+.landing-page .about section {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landing-page .about section .card {
+  position: relative;
+  width: 15rem;
+  height: auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: #fff;
+  margin: 0.5rem 1rem;
+}
+
+.landing-page .about section .card .index {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  background: #808080;
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+.landing-page .about section .card h3 {
+  margin-top: -2rem;
+}
+
+.landing-page .about section .card p {
+  line-height: 1.5rem;
+}
+
 .landing-page .container {
   width: 100%;
   height: auto;
@@ -79,6 +175,7 @@
   display: grid;
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
+  border-bottom: 1px solid #121212;
 }
 
 .landing-page .container .side-bar {
@@ -181,10 +278,54 @@
   border: 1px solid #121212;
 }
 
+.landing-page .testimonialhead {
+  margin: 2rem 0 2rem 2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.landing-page .testimonials {
+  width: 100%;
+  padding: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landing-page .testimonials .card {
+  position: relative;
+  width: 20rem;
+  height: auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: #fff;
+  margin: 0.5rem 1rem;
+}
+
+.landing-page .testimonials .card p {
+  line-height: 1.5rem;
+}
+
+.landing-page .testimonials .card i {
+  font-size: 3.5rem;
+  color: #ff4800;
+}
+
 @media screen and (max-width: 1000px) {
-  .landing-page {
-    height: 100vh;
-  }
   .landing-page .top-container {
     height: auto;
   }
@@ -197,6 +338,9 @@
 @media screen and (max-width: 768px) {
   .landing-page {
     height: auto;
+  }
+  .landing-page .about section .card {
+    margin: 2rem;
   }
   .landing-page .container {
     -ms-grid-columns: unset;
@@ -215,6 +359,11 @@
     margin-top: 1rem !important;
     height: 25rem;
   }
+  .landing-page .testimonialhead {
+    text-align: center;
+    margin: unset;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -224,13 +373,22 @@
     font-weight: 1000;
   }
   .landing-page .top-container section span {
-    font-size: .7rem !important;
+    font-size: 0.7rem !important;
   }
   .landing-page .top-container section ul a {
-    margin: .3rem;
+    margin: 0.3rem;
   }
   .landing-page .top-container section ul a li {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+  .landing-page .about span {
+    width: 90%;
+  }
+  .landing-page .about span h1 {
+    font-size: 2rem;
+  }
+  .landing-page .about span p {
+    line-height: 1.5rem;
   }
   .landing-page .container {
     -ms-grid-rows: 38% 62%;

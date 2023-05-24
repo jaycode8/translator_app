@@ -8,7 +8,17 @@
     font-family: "Roboto", sans-serif;
     resize: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
+.button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0.7rem 2.7rem;
+    background: rgb(255, 72, 0);
+    color: #fff;
+}
+
 .landing-page {
     width: 100%;
     height: auto;
@@ -54,12 +64,73 @@
             width: 98%;
         }
     }
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        display: grid;
+        place-items: center;
+        border-bottom: 1px solid #121212;
+        span {
+            width: 40rem;
+            text-align: center;
+            h1 {
+                font-size: 2.5rem;
+                font-weight: bolder;
+            }
+            p {
+                line-height: 1.8rem;
+                margin: 1rem 0;
+            }
+        }
+        section {
+            width: 100%;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            display: grid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .card {
+                position: relative;
+                width: 15rem;
+                height: auto;
+                padding: 1rem;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                gap: 1rem;
+                background: #fff;
+                margin: 0.5rem 1rem;
+                .index {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transform: translateY(-70%);
+                    background: #808080;
+                    font-size: 2rem;
+                    font-weight: 1000;
+                }
+                h3 {
+                    margin-top: -2rem;
+                }
+                p {
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
     .container {
         width: 100%;
         height: auto;
         position: relative;
         display: grid;
         grid-template-columns: 25% 75%;
+        border-bottom: 1px solid #121212;
         .side-bar {
             width: 100%;
             height: auto;
@@ -137,11 +208,43 @@
             }
         }
     }
+    .testimonialhead{
+        margin: 2rem 0 2rem 2rem;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    .testimonials{
+        width: 100%;
+            padding: 1rem 0;
+            display: grid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .card {
+                position: relative;
+                width: 20rem;
+                height: auto;
+                padding: 1rem;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                gap: 1rem;
+                background: #fff;
+                margin: 0.5rem 1rem;
+                p {
+                    line-height: 1.5rem;
+                }
+                i{
+                    font-size: 3.5rem;
+                    color: rgb(255, 72, 0);
+                }
+            }
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .landing-page {
-        height: 100vh;
         .top-container {
             height: auto;
         }
@@ -154,6 +257,13 @@
 @media screen and (max-width: 768px) {
     .landing-page {
         height: auto;
+        .about {
+            section {
+                .card {
+                    margin: 2rem;
+                }
+            }
+        }
         .container {
             grid-template-columns: unset;
             grid-template-rows: 40% 60%;
@@ -169,6 +279,11 @@
                 }
             }
         }
+        .testimonialhead{
+            text-align: center;
+            margin: unset;
+            margin-top: 2rem;
+        }
     }
 }
 
@@ -180,17 +295,28 @@
                 width: 16rem;
                 font-weight: 1000;
             }
-            section{
-                span{
-                    font-size: .7rem !important;
+            section {
+                span {
+                    font-size: 0.7rem !important;
                 }
-                ul{
-                    a{
-                        margin: .3rem;
-                        li{
-                            font-size: .8rem;
+                ul {
+                    a {
+                        margin: 0.3rem;
+                        li {
+                            font-size: 0.8rem;
                         }
                     }
+                }
+            }
+        }
+        .about {
+            span {
+                width: 90%;
+                h1 {
+                    font-size: 2rem;
+                }
+                p {
+                    line-height: 1.5rem;
                 }
             }
         }
