@@ -68,6 +68,7 @@
 
 .landing-page .top-container img {
   margin-top: 1rem;
+  width: 98%;
 }
 
 .landing-page .container {
@@ -197,9 +198,6 @@
   .landing-page {
     height: auto;
   }
-  .landing-page .top-container img {
-    width: 30rem;
-  }
   .landing-page .container {
     -ms-grid-columns: unset;
         grid-template-columns: unset;
@@ -233,9 +231,6 @@
   }
   .landing-page .top-container section ul a li {
     font-size: .8rem;
-  }
-  .landing-page .top-container img {
-    width: 20rem;
   }
   .landing-page .container {
     -ms-grid-rows: 38% 62%;

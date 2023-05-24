@@ -51,6 +51,7 @@
         }
         img {
             margin-top: 1rem;
+            width: 98%;
         }
     }
     .container {
@@ -153,11 +154,6 @@
 @media screen and (max-width: 768px) {
     .landing-page {
         height: auto;
-        .top-container {
-            img {
-                width: 30rem;
-            }
-        }
         .container {
             grid-template-columns: unset;
             grid-template-rows: 40% 60%;
@@ -196,9 +192,6 @@
                         }
                     }
                 }
-            }
-            img {
-                width: 20rem;
             }
         }
         .container {
