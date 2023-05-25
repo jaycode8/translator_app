@@ -24,7 +24,7 @@ const application = `Application of Artificial Intelligence.
 10. Entertainment.`;
 
 const ML = `Machine Learning.
-Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and models that enable computer systems to automatically learn and improve from experience or data without being explicitly programmed. It involves the creation of mathematical models and algorithms that allow machines to analyze and interpret data, identify patterns, make predictions, or take actions based on the information provided.
+Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and models that enable computer systems to automatically learn and improve from experience or data without being explicitly programmed. 
 
 a: Supervised Learning.
 b: Unsupervised Learning.
