@@ -9,7 +9,7 @@ perform tasks that would typically require human intelligence.`;
 
 const Overview = `Overview of Artificial Intelligence.
 AI encompasses various subfields, including machine learning, natural language processing, computer vision, expert systems, and robotics. Machine learning, a prominent aspect of AI, enables systems to learn from data and improve their performance over time without explicit programming. AI systems can analyze and interpret large amounts of data, identify patterns, make predictions, and adapt to changing circumstances.
-The ultimate goal of AI is to create machines that can perform tasks autonomously, exhibit intelligent behavior, and adapt to different situations, emulating human cognitive abilities.`;
+`;
 
 const application = `Application of Artificial Intelligence.
 1. Healthcare.
@@ -25,7 +25,6 @@ const application = `Application of Artificial Intelligence.
 
 const ML = `Machine Learning.
 Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and models that enable computer systems to automatically learn and improve from experience or data without being explicitly programmed. It involves the creation of mathematical models and algorithms that allow machines to analyze and interpret data, identify patterns, make predictions, or take actions based on the information provided.
-There are various types of machine learning techniques, including supervised learning, unsupervised learning, and reinforcement learning:
 
 a: Supervised Learning.
 b: Unsupervised Learning.
